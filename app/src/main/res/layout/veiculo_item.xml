@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/containerComponentsp"
+        style="@style/Edit_textl"
+        android:layout_width="370dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/imageView_veiculo"
+        android:layout_width="81dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentsp"
+        app:srcCompat="@drawable/ic_carro" />
+
+    <ImageView
+        android:id="@+id/imgstatus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentsp"
+        app:srcCompat="@drawable/ic_ativo" />
+
+
+    <TextView
+        android:id="@+id/txtplaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/txtnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:text="Nome:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsp" />
+
+    <TextView
+        android:id="@+id/txthorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="1dp"
+        android:text="Horario:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtplaca"
+        app:layout_constraintTop_toBottomOf="@+id/txtplaca" />
+
+    <TextView
+        android:id="@+id/txtvaga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="30dp"
+        android:text="Vaga n:"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txthorario"
+        app:layout_constraintTop_toBottomOf="@+id/txthorario" />
+
+    <TextView
+        android:id="@+id/text_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="XRR-1458"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtplaca"
+        app:layout_constraintTop_toTopOf="@id/txtplaca" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="5dp"
+        android:text="Douglas"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/txtnome"
+        app:layout_constraintStart_toEndOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/text_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="12:00"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/txthorario"
+        app:layout_constraintStart_toEndOf="@+id/txthorario"
+/>
+
+    <TextView
+        android:id="@+id/text_vaga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="26dp"
+        android:text="25"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/txtvaga"
+        app:layout_constraintStart_toEndOf="@+id/txtvaga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

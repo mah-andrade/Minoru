@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_placa2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Placa"
+        app:startIconDrawable="@drawable/ic_placa2"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:inputType="textCapCharacters"
+        android:background="@color/white"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_modelovec2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/dialog_placa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWYXZ"
+            app:maskCharacter="_"
+            app:mask="___-____"
+            app:maskStyle="normal"
+            app:counterMaxLength="60"
+
+
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Adicionar Veiculo"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_nome1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Nome"
+        app:startIconDrawable="@drawable/ic_person"
+        app:endIconMode="clear_text"
+        android:background="@color/white"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_modelovec2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Modelo"
+        app:startIconDrawable="@drawable/ic_placa2"
+        app:endIconMode="clear_text"
+        android:background="@color/white"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_telefone2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_modelovec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_telefone2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Telefone"
+        app:startIconDrawable="@drawable/ic_tel"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_nome1"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/dialog_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:digits="1234567890"
+            android:maxLines="1"
+            app:mask="(__) _____-____"
+            app:maskStyle="normal"
+            app:maskCharacter="_"
+            android:textColor="@color/black"
+            app:counterMaxLength="60"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add"
+        style="@style/Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:padding="1dp"
+        android:text="Adicionar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add_cancel"
+        style="@style/Buttoncancel"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="12dp"
+        android:padding="1dp"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/dialog_placa2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Tipo de veiculo:"
+        app:layout_constraintStart_toStartOf="@id/dialog_nome1"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_placa2"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Horario Atual:"
+        app:layout_constraintStart_toStartOf="@id/dialog_nome1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewM"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <TextView
+        android:id="@+id/txt_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioV"
+        android:layout_width="199dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_placa2">
+
+        <RadioButton
+            android:id="@+id/radioCarro"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="21dp"
+            android:textSize="20dp"
+            android:checked="true"
+            android:text="Carro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_placa" />
+
+        <RadioButton
+            android:id="@+id/radioMoto"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:text="Moto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioCarro" />
+
+    </RadioGroup>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_VAGA2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="N° Vaga"
+        android:layout_marginStart="0dp"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:background="@color/white"
+        app:hintTextColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/radioV"
+        app:layout_constraintTop_toBottomOf="@id/dialog_placa2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_VAGA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

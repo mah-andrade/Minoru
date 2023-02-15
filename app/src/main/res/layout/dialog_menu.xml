@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="400dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Escolha uma das opcões abaixo:"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Dia"
+        style="@style/Edit_text"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        android:text="Diário"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Avuls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Mensal"
+        style="@style/Edit_text"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Mensal"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Dia" />
+
+    <TextView
+        android:id="@+id/txt_Avuls"
+        style="@style/Edit_text"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="23dp"
+        android:text="Avulso"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cancel"
+        style="@style/Buttoncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="35dp"
+        android:text="  Cancelar  "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mensal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add21"
+        style="@style/Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="1dp"
+        android:padding="1dp"
+        android:text="Finalizar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/bt_add_cancel21"
+        app:layout_constraintEnd_toEndOf="@id/Edit_senhasss"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add_cancel21"
+        style="@style/Buttoncancel"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="0dp"
+        android:padding="1dp"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/Edit_emailtest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_senhasss"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Usuário"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_emailtest"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:hintTextColor="@color/black"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/ic_email2"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            app:counterMaxLength="60"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_senhasss"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/blue"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/ic_senha"
+        android:hint="Senha"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Edit_emailtest">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

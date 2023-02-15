@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="650dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_nomecartao2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="Nome do titular"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Edit_validade1"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Edit_nomecartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_validade1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="35dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="Validade"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Edit_ncarta2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/Edit_validade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:inputType="text|numberDecimal"
+            android:maxLines="1"
+            app:mask="__/__"
+            app:maskStyle="normal"
+            app:maskCharacter="_"
+            android:textColor="@color/black"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_cvv1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="40dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="CVV"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toEndOf="@id/Edit_validade1"
+        app:layout_constraintTop_toBottomOf="@id/Edit_ncarta2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/Edit_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:inputType="text|numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:counterMaxLength="60"
+            app:mask="___"
+            app:maskCharacter="_"
+            app:maskStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_CPF2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="CPF/CNPJ do titular"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Edit_nomecartao2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/Edit_CPF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:inputType="text|numberDecimal"
+            app:mask="___.___.___-__"
+            app:maskStyle="normal"
+            app:maskCharacter="_"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_ncarta2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:hint="Número do cartão"
+        app:endIconMode="clear_text"
+        android:textSize="15dp"
+        android:padding="0dp"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logocartao"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/Edit_ncartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:inputType="text|numberDecimal"
+            app:mask="____  ____  ____  ____"
+            app:maskStyle="normal"
+            app:maskCharacter="_"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_inf_cancelar"
+        style="@style/Buttoncancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="cancelar"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_inf_renova"
+        app:layout_constraintStart_toStartOf="@id/Edit_validade1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_inf_renova"
+        style="@style/Button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        android:text="Pagar"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logocartao"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cartao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtvlpagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:text="Valor à pagar:"
+        app:layout_constraintStart_toStartOf="@+id/Edit_CPF2"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_CPF2" />
+
+    <TextView
+        android:id="@+id/vlpagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="R$50,00"
+        android:textColor="@color/red2"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtvlpagar"
+        app:layout_constraintStart_toEndOf="@+id/txtvlpagar"
+        app:layout_goneMarginStart="15dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvlpagar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

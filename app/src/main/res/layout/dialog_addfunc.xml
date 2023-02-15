@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="610dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_salario2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Salário"
+        app:startIconDrawable="@drawable/ic_salario"
+        android:background="@color/white"
+        app:endIconMode="clear_text"
+        android:textColor="@color/black"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_telefone2"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/dialog_salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60"
+
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_emailfunc2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/ic_email2"
+        android:background="@color/white"
+        app:endIconMode="clear_text"
+        android:textColor="@color/black"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_salario2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_emailfunc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_senhafunc2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="Senha"
+        app:startIconDrawable="@drawable/ic_senha"
+        android:background="@color/white"
+        app:endIconMode="password_toggle"
+        android:textColor="@color/black"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_emailfunc2">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_senhafunc"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:maxLines="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Adicionar Funcionário"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_nome2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/blue"
+        android:background="@color/white"
+        android:hint="Nome"
+        app:startIconDrawable="@drawable/ic_person"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewM"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:counterMaxLength="60" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_telefone2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:background="@color/white"
+        android:hint="Telefone"
+        app:startIconDrawable="@drawable/ic_tel"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_cpf2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/dialog_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:digits="1234567890"
+            app:mask="(__) _____-____"
+            app:maskStyle="normal"
+            app:maskCharacter="_"
+            android:textColor="@color/black"
+            app:counterMaxLength="60"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_cpf2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="CPF"
+        app:startIconDrawable="@drawable/ic_placa"
+        android:background="@color/white"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_nome2"
+        >
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/dialog_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|phone"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:maxLines="60"
+            app:mask="___.___.___-__"
+            android:digits="1234567890"
+            app:maskCharacter="_"
+            app:maskStyle="completable"
+            android:textColor="@color/black"
+            app:counterMaxLength="60"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add"
+        style="@style/Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:padding="1dp"
+        android:text="Proximo"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add_cancel"
+        style="@style/Buttoncancel"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="12dp"
+        android:padding="1dp"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/dialog_salario2"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

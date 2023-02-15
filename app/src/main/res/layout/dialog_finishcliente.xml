@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="600dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Informações do cliente"
+        android:textAlignment="center"
+        android:textColor="@color/red2"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtinfnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Nome:"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewM" />
+
+    <TextView
+        android:id="@+id/txtinfentrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="hora de entrada:"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfcliente" />
+
+    <TextView
+        android:id="@+id/txtinfplaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:text="Placa:"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmodelo" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtinfnome"
+        app:layout_constraintTop_toTopOf="@+id/txtinfnome" />
+
+    <TextView
+        android:id="@+id/txthoraentrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtinfentrada"
+        app:layout_constraintTop_toTopOf="@+id/txtinfentrada" />
+
+    <TextView
+        android:id="@+id/txtplaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtinfplaca"
+        app:layout_constraintTop_toTopOf="@+id/txtinfplaca" />
+
+    <TextView
+        android:id="@+id/txtinfoveiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Tipo de Veiculo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfentrada" />
+
+    <TextView
+        android:id="@+id/txtmodelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Modelo:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/txtinfnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfoveiculo" />
+
+    <TextView
+        android:id="@+id/txtmodelovec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtmodelo"
+        app:layout_constraintTop_toTopOf="@+id/txtmodelo" />
+
+    <TextView
+        android:id="@+id/txtvec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtinfoveiculo"
+        app:layout_constraintTop_toTopOf="@+id/txtinfoveiculo" />
+
+    <TextView
+        android:id="@+id/txtinfotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Telefone:"
+        app:layout_constraintStart_toStartOf="@+id/txtinfnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfnome" />
+
+    <TextView
+        android:id="@+id/txttel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtinfotel"
+        app:layout_constraintTop_toTopOf="@id/txtinfotel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btfinalizar"
+        style="@style/Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text=" Finalizar "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_inf_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_inf_cancelar"
+        style="@style/Buttoncancel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Fechar"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtinfcliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Tipo de cliente :"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfotel" />
+
+    <TextView
+        android:id="@+id/txtcliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtinfcliente"
+        app:layout_constraintTop_toTopOf="@+id/txtinfcliente" />
+
+    <TextView
+        android:id="@+id/txtinfvaga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="N° Vaga:"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/txtinfnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtinfplaca" />
+
+    <TextView
+        android:id="@+id/txtvaga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/txtinfvaga"
+        app:layout_constraintTop_toTopOf="@+id/txtinfvaga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo2"
+    tools:context=".forms.form_esqueceu_senha">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Recuperar senha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+
+
+    <ImageView
+        android:id="@+id/logominoru"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/minorulogo3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_volt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logominoru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Digite seu email cadastrado:"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Edit_emailtest"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Edit_emailtest"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        app:boxStrokeColor="@color/blue"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/ic_email2"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="60"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logominoru"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Edit_email_esq"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            app:counterMaxLength="60"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_esq"
+        style="@style/Button"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:shadowColor="@color/blue"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Edit_emailtest"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

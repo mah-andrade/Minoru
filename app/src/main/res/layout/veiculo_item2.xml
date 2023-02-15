@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="165dp"
+    >
+
+
+    <View
+        android:id="@+id/containerComponentsp"
+        style="@style/Edit_textl"
+        android:layout_width="373dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_veiculo"
+        android:layout_width="81dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentsp"
+        app:srcCompat="@drawable/ic_carro" />
+
+    <ImageView
+        android:id="@+id/imgstatus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentsp"
+        app:srcCompat="@drawable/ic_finalizado" />
+
+
+    <TextView
+        android:id="@+id/txtplaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/txtnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="180dp"
+        android:text="Nome:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsp" />
+
+    <TextView
+        android:id="@+id/txttipocliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="1dp"
+        android:text="Tipo de cliente:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtplaca"
+        app:layout_constraintTop_toBottomOf="@+id/txtplaca" />
+
+    <TextView
+        android:id="@+id/txtvalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="30dp"
+        android:text="Valor pago:"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txttipocliente"
+        app:layout_constraintTop_toBottomOf="@+id/txttipocliente" />
+
+    <TextView
+        android:id="@+id/txttempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="30dp"
+        android:text="Tempo decorrido:"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtvalor"
+        app:layout_constraintTop_toBottomOf="@+id/txtvalor" />
+
+
+    <TextView
+        android:id="@+id/txttempodecorrido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text=" 2"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txttempo"
+        app:layout_constraintTop_toBottomOf="@+id/txtvalor" />
+
+
+    <TextView
+        android:id="@+id/text_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="XRR-1458"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtplaca"
+        app:layout_constraintTop_toTopOf="@id/txtplaca" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="5dp"
+        android:text="Douglas"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/txtnome"
+        app:layout_constraintStart_toEndOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/text_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Avulso"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/txttipocliente"
+        app:layout_constraintStart_toEndOf="@+id/txttipocliente"
+/>
+
+    <TextView
+        android:id="@+id/text_valopagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="26dp"
+        android:text="25 reais"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/txtvalor"
+        app:layout_constraintStart_toEndOf="@+id/txtvalor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

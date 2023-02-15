@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929592114740",
+    "project_id": "minoru-fe017",
+    "storage_bucket": "minoru-fe017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929592114740:android:0ebb9f31844250545d1461",
+        "android_client_info": {
+          "package_name": "com.example.minoru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929592114740-gg0r4oh0gd667qnlnl230kdu2vi5q9qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwVFKt4WcfkEzg_RbkNgAFoe5Q7Jz1rKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929592114740-gg0r4oh0gd667qnlnl230kdu2vi5q9qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

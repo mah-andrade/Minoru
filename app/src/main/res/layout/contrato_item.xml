@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="120dp"
+    >
+
+
+    <View
+        android:id="@+id/containerComponentsp"
+        style="@style/Edit_textl"
+        android:layout_width="373dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView_func"
+        android:layout_width="81dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentsp"
+        app:srcCompat="@drawable/contrato" />
+
+    <TextView
+        android:id="@+id/txtdtinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Inicio:"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/txtnome"
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="150dp"
+        android:text="Nome:"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsp" />
+
+    <TextView
+        android:id="@+id/txtdtfim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="1dp"
+        android:text="Data de termino"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/txtdtinicio"
+        app:layout_constraintTop_toBottomOf="@+id/txtdtinicio" />
+
+
+    <TextView
+        android:id="@+id/text_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="20/04/2020"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@+id/txtdtinicio"
+        app:layout_constraintTop_toTopOf="@id/txtdtinicio" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Douglas"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@+id/txtnome"
+        app:layout_constraintTop_toTopOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/text_dtfim"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="14/04/2020"
+        android:textSize="17dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/txtdtfim"
+        app:layout_constraintStart_toEndOf="@+id/txtdtfim"
+/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

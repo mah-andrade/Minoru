@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:background="@drawable/alerdialoglayout"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/txtnomepag"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text=" Deseja adicionar usuario ao cliente? "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_sim"
+        style="@style/Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Sim"
+        app:layout_constraintBottom_toBottomOf="@id/bt_nao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@id/bt_nao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_nao"
+        style="@style/Buttoncancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="0dp"
+        android:text="Não"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="@id/txtnomepag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
