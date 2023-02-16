@@ -4,7 +4,8 @@ e o SISTEMA/APP tem tais funcionalidades
 
 "Progresso significa um monte de falhas."
 
-SISTEMA DE LOGIN GERENTE/FUNCIONARIO  -- MENSALISTA/CLIENTE em desenvolvimento
+SISTEMA DE LOGIN GERENTE/FUNCIONARIO  -- MENSALISTA/CLIENTE em desenvolvimento!
+
 Minoru ESTACIONAMENTO - VOLTADO AO ESTACIONAMENTO
 
 GERENTE:
